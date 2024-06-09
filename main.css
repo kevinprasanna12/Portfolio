@@ -795,6 +795,7 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: none;
+    text-decoration:none;    
 }
 .pro-btn:hover{
     transform: translate(-50%, -60%);
