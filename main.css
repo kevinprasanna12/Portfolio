@@ -453,12 +453,17 @@ html{
     flex-direction: column;
 
 }
+.e-c{
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
 .ed_head h1{
     color: var(--clr);
     font-family: var(--major-font);
     font-size: 20px;
     place-self: center;
-    
+
 }
 .ed_head p{
     color: var(--clr2);
@@ -469,10 +474,7 @@ html{
 }
 .ed_head i{
     font-size: 18px;
-    position: absolute;
     color: var(--primary);
-    left: 150px;
-    top: 0px;
 }
 .exp-1{
     position: relative;
@@ -599,6 +601,7 @@ html{
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
+
 .achievements hr{
     margin-top: 10px;
     opacity: 0.1;
@@ -610,6 +613,9 @@ html{
     flex-direction: column;
     align-items: center;
 }
+.a-icon{
+    display: flex;
+}
 .a-head h1{
     font-size: 20px;
     font-family: var(--major-font);
@@ -620,9 +626,6 @@ html{
 .a-head i{
     color: var(--primary);
     padding:  5px;
-    position: absolute;
-    left: 120px;
-    top: 1px;
     font-size: 18px;
 }
 .a-head p{
@@ -745,12 +748,14 @@ html{
     font-size: 12px;
     font-weight: 100;
 }
+.p-c{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 .pro-head i{
     font-size: 18px;
-    position: absolute;
     color: var(--primary);
-    left: 150px;
-    top: 0px;
 }
 .brands-list{
     overflow: hidden;
@@ -824,12 +829,14 @@ html{
     font-weight: 900;
     letter-spacing: 0px;
 }
+.s-c{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 .skill-head i{
-    left: 42px;
-    position: absolute;
     font-size: 20px;
-    color: var(--primary);
-    padding-right: 2px;    
+    color: var(--primary);    
 }
 
 .skill1{
@@ -1249,7 +1256,9 @@ html{
     justify-content: center;
     color: var(--clr);
     font-size: 10px;
-    padding: 10px 0 0px 15px;
+    padding: 5px 0 0 0;
+    gap: 5px;
+    place-self: center;
 }
 .box-container p{
     font-family: var(--base-font);
@@ -1260,10 +1269,8 @@ html{
 }
 .box-main-i{
     color: var(--primary);
-    position: absolute;
-    top: 21px;
-    left: 53px;
     font-size: 16px;
+    padding: 2px 0 0 0;
 }
 .lists{
     color: var(--clr);
