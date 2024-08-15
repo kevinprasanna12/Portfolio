@@ -47,17 +47,68 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger)
 
 
-    
-
-
-
-
-    gsap.to('#major-contents',{
+    gsap.to('.mainbox',{
         scrollTrigger: {
             trigger: '.majorbody',
         },
-        opacity: 1,
-        stagger:0.1
+
+        y:0,
+        duration:.3,   
+        
+    });
+    gsap.to('.interestbox',{
+        scrollTrigger: {
+            trigger: '.majorbody',
+        },
+        x:0,
+        duration:.5,
+    });
+    gsap.to('.achievements',{
+        scrollTrigger: {
+            trigger: '.majorbody',
+        },
+        y:0,
+        duration:.5
+    });
+    gsap.to('.education',{
+        scrollTrigger: {
+            trigger: '.majorbody',
+        },
+        y:0,
+        duration:1.5,
+
+    });
+    gsap.to('.project',{
+        scrollTrigger: {
+            trigger: '.majorbody',
+        },
+        scale:1,
+        duration:1,
+
+    });
+    gsap.to('.skillbox',{
+        scrollTrigger: {
+            trigger: '.majorbody',
+        },
+        x:0,
+        duration:1.5,
+
+    });
+    gsap.to('.mybox',{
+        scrollTrigger: {
+            trigger: '.majorbody',
+        },
+        y:0,
+        duration:1.5,
+
+    });
+    gsap.to('.social',{
+        scrollTrigger: {
+            trigger: '.majorbody',
+        },
+        x:0,
+        duration:1.5,
+
     });
     
 
@@ -71,7 +122,8 @@ window.addEventListener("mousemove", function(dets){
 
 });
    
-    var probtn = document.getElementsByClassName("pro-btn");
+
+var probtn = document.getElementsByClassName("pro-btn");
 
 for (var i = 0; i < probtn.length; i++) {
     probtn[i].addEventListener("mouseenter", function(dets) {
@@ -85,7 +137,7 @@ for (var i = 0; i < probtn.length; i++) {
         gsap.to('.cursor', {
             backgroundColor: '#a290fc',
             scale:1
-             // or whatever the original color is
+             
         });
     });
 }
@@ -107,7 +159,7 @@ for (var i = 0; i < probtn.length; i++) {
         gsap.to('.cursor', {
             backgroundColor: '#a290fc',
             scale:1
-             // or whatever the original color is
+             
         });
     });
 }
@@ -130,7 +182,7 @@ for (var i = 0; i < probtn.length; i++) {
             delay:0,
             duration:0,
             scale:1
-             // or whatever the original color is
+             
         });
     });
 

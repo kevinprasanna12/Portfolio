@@ -13,10 +13,11 @@ html.lenis, html.lenis body {
   .lenis.lenis-smooth {
     scroll-behavior: auto !important;
   }
-  
+
   .lenis.lenis-smooth [data-lenis-prevent] {
     overscroll-behavior: contain;
   }
+  
   
   .lenis.lenis-stopped {
     overflow: hidden;
@@ -64,8 +65,8 @@ html.lenis, html.lenis body {
 
 
 html{
-    scrollbar-width: none;
     cursor: none;
+    scrollbar-width: none;
 }
 .cursor{
     width: 14px;
@@ -101,8 +102,8 @@ html{
     border-radius: 20px;
     border: solid var(--box-bg2) 1px;
     padding: 15px 20px;
-    opacity: 0; 
     position: relative;
+    transform: translateY(-40rem);
 }
 .starter1{
    display: inline;
@@ -432,7 +433,7 @@ html{
     }
 }
 .education {
-    opacity: 0;
+    transform: translateY(-20rem);
     grid-area: education;
     background-color: var(--box-bg);   
     border-radius: 20px;
@@ -591,7 +592,6 @@ html{
 }
 
 .achievements {
-    opacity: 0;
     grid-area:skill-box;
     background-color: var(--box-bg);   
     border-radius: 20px;
@@ -600,6 +600,7 @@ html{
     overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    transform: translateY(30rem);
 }
 
 .achievements hr{
@@ -725,7 +726,7 @@ html{
     border: solid var(--box-bg2) 1px;
     padding: 20px 20px;
     overflow: hidden;
-    opacity: 0;
+    transform: scale(0.2)
 }
 .pro-head{
     position: relative;
@@ -779,7 +780,7 @@ html{
 }
 @keyframes scroll{
     to{
-        translate: calc(-3 * 15rem);
+        transform: translate(calc(-3 * 15rem));
     }
 }
 .pro-btn{
@@ -812,8 +813,8 @@ html{
     border-radius: 20px;
     border: solid var(--box-bg2) 1px;
     padding: 20px;
-    opacity: 0;
     cursor: none;
+    transform: translateX(30rem);
 }
 .skill-head{
     position: relative;
@@ -1115,6 +1116,7 @@ html{
     transition: .5s all ease;
     padding: 20px;
     transition: .3s all ease;
+    transform: translateX(-40rem);
 }
 
 .interestbox:hover > .int-content{
@@ -1152,9 +1154,9 @@ html{
     border-radius: 20px;
     border: solid var(--box-bg2) 1px;
     padding: 20px;
-    opacity: 0;
     list-style: none;
     cursor: none;
+    transform: translateX(50rem);
 }
 .s-head {
     left: 5px;
@@ -1179,6 +1181,7 @@ html{
 .social-links i{
     padding: 0 8px 0 0;
     font-size: 18px;
+    color: var(--primary);
 }
 .s-head p{
     font-family: var(--base-font);
@@ -1243,9 +1246,9 @@ html{
     background-color: var(--box-bg);   
     border-radius: 20px;
     border: solid var(--box-bg2) 1px;
-    opacity: 0;
     padding: 10px;
     position: relative;
+    transform: translateY(30rem);
 }
 
 .box-head{
@@ -1301,9 +1304,7 @@ html{
     padding: 0 8px 0 0;
     color: var(--primary);
 }
-#major-contents{
-    opacity: 0;
-}
+
 /**********************************************************************************************************************************************/
 /**********************************************************************************************************************************************/
 /**********************************************************************************************************************************************/
