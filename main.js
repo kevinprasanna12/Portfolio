@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
 
         y:0,
-        duration:.3,   
+        delay:.2,
+        duration:1,   
         
     });
     gsap.to('.interestbox',{
@@ -61,29 +62,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: '.majorbody',
         },
         x:0,
-        duration:.5,
+        delay:.2,
+        duration:1,
     });
     gsap.to('.achievements',{
         scrollTrigger: {
             trigger: '.majorbody',
         },
         y:0,
-        duration:.5
+        duration:1,
+        delay:.5,
     });
     gsap.to('.education',{
         scrollTrigger: {
             trigger: '.majorbody',
         },
         y:0,
-        duration:1.5,
+        duration:1,
+        delay:.8,
 
     });
     gsap.to('.project',{
         scrollTrigger: {
             trigger: '.majorbody',
         },
+        opacity:1,
         scale:1,
         duration:1,
+        delay:.8,
 
     });
     gsap.to('.skillbox',{
@@ -92,6 +98,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
         x:0,
         duration:1.5,
+        delay:1
 
     });
     gsap.to('.mybox',{
@@ -100,6 +107,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
         y:0,
         duration:1.5,
+        delay:1
 
     });
     gsap.to('.social',{
@@ -108,6 +116,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
         x:0,
         duration:1.5,
+        delay:.9
 
     });
     

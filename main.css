@@ -720,6 +720,7 @@ html{
     }
 }
 .project {
+    opacity: 0;
     grid-area: project;
     background-color: var(--box-bg);   
     border-radius: 20px;
@@ -1322,6 +1323,9 @@ html{
 } 
 @media (max-width:480px){
     
+html{
+    background: black;
+}
 .majorbody{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
@@ -1334,7 +1338,11 @@ html{
     'social'
     'tool-box'
     'my-box';
-    max-height: 260svh;
+    height: auto;
+    overflow: visible;
+}
+html{
+    overflow: visible;
 }
 .mainbox img{
     width: 100px;
@@ -1366,6 +1374,12 @@ html{
     left: 1px;
 }
 .resume{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+
+.resume p{
     display: none;
 }
 .w_p ,.email {
@@ -1373,24 +1387,13 @@ html{
 }
 .w_p i,.email i{
     font-size: 16px;
-}
-.eduaction{
-    height: fit-content;   
-}
-.ed_head i{
-    left:90px;
-}
-.education i{
-    left:100px;
-}
+}   
 .exp-1 h2{
     font-size: 16px;
 }
-.achievements i{
-    left: 65px;
-}
-.a-content1,.a-content2,.a-content3,.a-content4,.a-content5{
-    animation: sliding 10s infinite;
+.achievements{
+    overflow: hidden;
+    height: 60svh;
 }
 .duplicate{
     display: none;
@@ -1402,16 +1405,10 @@ html{
     top: 19px;
     font-size: 12px;
 }
-.project h1{
-    padding-top: 10px;
+.project{
+    height: 40svh;
 }
-.project p{
-    padding-bottom: 20px;
-}
-.project i{
-    left: 105px;
-    top: 10px;
-}
+
 .pro-btn{
     top: 50%;
     left: 50%;
@@ -1424,21 +1421,26 @@ html{
     position: relative;
     left: 0;
 }
-
+.skill-sidebar{
+    display: none;
+}
 .interestbox img{
     object-fit: fill;
 }
-.social{
-    max-height: 27svh;
+.interestbox{
+    height: 50svh;
 }
-
-
-
-
-
-
-
-
-
+.social{
+    height: 35svh;
+}
+.education{
+    overflow: visible;
+}
+.verline1,.verline2{
+    height: 169px;
+}
+.mybox{
+    padding-bottom: 20px;
+}
 }
     
