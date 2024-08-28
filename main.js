@@ -1,44 +1,44 @@
-function moverhtml(){
-    document.getElementById("html").style.display= "inline-block" ;
+function movers1(){
+    document.getElementById("s1").style.display= "inline-block" ;
 }
-function mouthtml(){
-    document.getElementById("html").style.display= "none";
+function mouts1(){
+    document.getElementById("s1").style.display= "none";
 }
-function movercss(){
-    document.getElementById("css").style.display= "inline-block";
+function movers2(){
+    document.getElementById("s2").style.display= "inline-block";
 }
-function moutcss(){
-    document.getElementById("css").style.display= "none";
+function mouts2(){
+    document.getElementById("s2").style.display= "none";
 }
-function moverjs(){
-    document.getElementById("js").style.display= "inline-block";
+function movers3(){
+    document.getElementById("s3").style.display= "inline-block";
 }
-function moutjs(){
-    document.getElementById("js").style.display= "none";
+function mouts3(){
+    document.getElementById("s3").style.display= "none";
 }
-function moverfigma(){
-    document.getElementById("figma").style.display= "inline-block";
+function movers4(){
+    document.getElementById("s4").style.display= "inline-block";
 }
-function moutfigma(){
-    document.getElementById("figma").style.display= "none"
+function mouts4(){
+    document.getElementById("s4").style.display= "none"
 }
-function moverda(){
-    document.getElementById("davinci").style.display= "inline-block";
+function movers5(){
+    document.getElementById("s5").style.display= "inline-block";
 }
-function moutda(){
-    document.getElementById("davinci").style.display="none";
+function mouts5(){
+    document.getElementById("s5").style.display="none";
 }
-function moverink(){
-    document.getElementById("ink").style.display= "inline-block";
+function movers6(){
+    document.getElementById("s6").style.display= "inline-block";
 }
-function moutink(){
-    document.getElementById("ink").style.display= "none";
+function mouts6(){
+    document.getElementById("s6").style.display= "none";
 }
-function moverwire(){
-    document.getElementById("wire").style.display="inline-block";
+function movers7(){
+    document.getElementById("s7").style.display="inline-block";
 }
-function moutwire(){
-    document.getElementById("wire").style.display= "none";
+function mouts7(){
+    document.getElementById("s7").style.display= "none";
 }
 
 //-------------------------------------------------------------------------------------------------------//
@@ -159,9 +159,9 @@ for (var i = 0; i < probtn.length; i++) {
             backgroundColor: 'transparent',
             scale:1.5,
             borderColor:'#a290fc',
-            borderWidth: '1px',
+            borderWidth: '2px',
             borderStyle: 'solid',
-            scale:3
+            scale:4
         });
     });
     name[i].addEventListener("mouseleave", function(dets) {
@@ -175,22 +175,25 @@ for (var i = 0; i < probtn.length; i++) {
 
 
 
-var name = document.getElementsByClassName("name");
+var project = document.getElementsByClassName("project");
 
-for (var i = 0; i < probtn.length; i++) {
-    name[i].addEventListener("mouseenter", function(dets) {
-        gsap.to('.name', {
-            color: '#a290fc',
-            delay:0,
-            duration:0.1,
+for (var i = 0; i < project.length; i++) {
+    project[i].addEventListener("mouseenter", function(dets) {
+        gsap.to('.cursor', {
+            backgroundColor: 'transparent',
+            scale:1.5,
+            borderColor:'ivory',
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            scale:3
         });
     });
-    name[i].addEventListener("mouseleave", function(dets) {
-        gsap.to('.name', {
-            color: 'ivory',
-            delay:0,
-            duration:0,
-            scale:1
+    project[i].addEventListener("mouseleave", function(dets) {
+        gsap.to('.cursor', {
+            backgroundColor: '#a290fc',
+            scale:1,
+            borderColor:'#a290fc'
+             
              
         });
     });

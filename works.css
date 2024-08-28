@@ -812,3 +812,68 @@ html{
     color: var(--primary);
 }
 
+
+@media (max-width:480px){
+
+.majorbody{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    'projects'
+    'intro'
+    'social'
+    'skills'
+    'mybox'
+    ;
+
+    height: auto;
+    max-height:max-content;
+}   
+.cursor{
+    display: none;
+}
+.intro{
+    grid-area: intro;
+}
+
+.projects{
+    grid-area:projects;
+}
+.pro-contents{
+    height: 150svh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    gap:2rem;
+    padding: 10px 0px;
+}
+.social{
+    grid-area: social;
+
+    h1{
+        font-size: 24px;
+    }
+}
+.skills{
+    grid-area: skills;
+    padding: 20px;
+
+    h1{
+        font-size: 24px;
+    }
+}
+.mybox{
+    grid-area: mybox;
+
+    h1{
+        font-size: 24px;
+    }]
+}
+
+
+.div2{
+    display: none;
+}
+
+
+}

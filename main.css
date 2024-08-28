@@ -769,12 +769,7 @@ html{
     grid-auto-columns: 15rem;
     padding: 15px 10px;
     animation: scroll 30s linear infinite;
-    justify-items: stretch;
-    
-    &:hover {
-        animation-play-state: paused;
-      }
-    
+    justify-items: stretch; 
 }
 .wrapper img{
     border-radius: 5px;
@@ -816,6 +811,7 @@ html{
     padding: 20px;
     cursor: none;
     transform: translateX(30rem);
+    z-index: 99;
 }
 .skill-head{
     position: relative;
@@ -872,16 +868,23 @@ html{
     font-weight: 300;
 }
 
-.skill7 i{
-    color: var(--clr2);
+.skill4 i{
+    color: #61dbfb;
     place-content: center;
     background: transparent;
     padding: 5px;
     margin: 2px 0;
-    margin-left: 8px;
     font-size: 20px;
     border: solid 1px var(--box-bg1);
     border-radius: 5px;
+}
+
+.skill5{
+    img{
+        width: 20px;
+        height: 20px;
+        margin: 7px 5px;
+    }
 }
 
 .skill2 ,.skill3, .skill4, .skill5, .skill6, .skill7{
@@ -895,7 +898,7 @@ html{
     margin-top: 10px;
     transition: 1s all;
 }
-.skill2 svg,.skill3 svg, .skill5 svg, .skill6 svg, .skill4  svg{
+.skill2 svg,.skill3 svg, .skill7 svg, .skill6 svg, .skill4  svg {
     color: var(--primary);
     place-content: center;
     background:transparent;
@@ -917,7 +920,11 @@ html{
 .skill7 h3{
     padding: 0;    
 }
-#html{
+
+.skill-sidebar{
+    z-index: 99;
+}
+#s1{
     display: none;
     flex-direction: column;
     width: 350px;
@@ -937,16 +944,16 @@ html{
     transition: all .3s ;
     
 }
-#html span{
+#s1 span{
     color: var(--primary);
 }
-#html p{
+#s1 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
 
-#css{
+#s2{
     display: none;
     width: 350px;
     position: absolute;
@@ -964,15 +971,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#css span{
+#s2 span{
     color: var(--primary);
 }
-#css p{
+#s2 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#js{
+#s3{
     display: none;
     width: 350px;
     position: absolute;
@@ -990,15 +997,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#js span{
+#s3 span{
     color: var(--primary);
 }
-#js p{
+#s3 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#figma{
+#s4{
     display: none;
     width: 350px;
     position: absolute;
@@ -1016,15 +1023,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#figma span{
+#s4 span{
     color: var(--primary);
 }
-#figma p{
+#s4 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#davinci{
+#s5{
     display:none;
     width: 350px;
     position: absolute;
@@ -1042,15 +1049,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#davinci span{
+#s5 span{
     color: var(--primary);
 }
-#davinci p{
+#s5 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#ink{
+#s6{
     display: none;
     width: 350px;
     position: absolute;
@@ -1068,19 +1075,18 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#ink span{
+#s6 span{
     color: var(--primary);
 }
-#ink p{
+#s6 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#wire{
+#s7{
     display: none;
     width: 350px;
     position: absolute;
-    z-index: 2;
     right: 250px;
     top: 425px;
     background: var(--box-bg3);
@@ -1095,10 +1101,10 @@ html{
     transition: all .3s ;
     z-index: 999;
 }
-#wire span{
+#s7 span{
     color: var(--primary);
 }
-#wire p{
+#s7 p{
 
     color: var(--clr2);
     padding-top:10px ;
@@ -1149,7 +1155,7 @@ html{
 }
 .social {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     grid-area: social;
     background-color: var(--box-bg);   
     border-radius: 20px;
@@ -1248,8 +1254,8 @@ html{
     border-radius: 20px;
     border: solid var(--box-bg2) 1px;
     padding: 10px;
-    position: relative;
     transform: translateY(30rem);
+    z-index: 0;
 }
 
 .box-head{
@@ -1326,6 +1332,9 @@ html{
 html{
     background: black;
 }
+.cursor{
+    display: none;
+}
 .majorbody{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
@@ -1352,6 +1361,7 @@ html{
     font-size: 23px;
     position: relative;
     top: -70px;
+    z-index: 99;
 }
 .miniabout{
     margin-top: 10px;
