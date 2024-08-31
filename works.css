@@ -239,7 +239,7 @@ html{
     height: 70.4px;
     --clring: var(--primary);
     --clr-alpha: var(--box-bg);
-    animation: spinner 2.5s infinite ease;
+    animation: spinner 4s infinite ease;
     transform-style: preserve-3d;
   }
   .div2  a{
@@ -350,7 +350,7 @@ html{
     padding: 10px 30px 0 30px; 
     
 }
-.divs1{
+.divs1 , .divs2 , .divs3, .divs4{
     background: var(--box-bg2);
     border-radius: 10px;
     border: solid 2px var(--box-bg3);  
@@ -358,39 +358,16 @@ html{
     padding-bottom: 0px;
 }
 
-.divs2{
-    background: var(--box-bg2);
-    border-radius: 10px;
-    border: solid 2px var(--box-bg3);
-    padding: 15px;
-    padding-bottom: 0px;
-}
-.divs3{
-    background: var(--box-bg2);
-    border-radius: 10px;
-    border: solid 2px var(--box-bg3);
-    padding: 15px;
-    padding-bottom: 0px;
-}
-.divs4{
-    background: var(--box-bg2);
-    border-radius: 10px;
-    border: solid 2px var(--box-bg3);
-    place-content: center;
-    text-align: center;
-    color: var(--primary);
-    font-family: var(--major-font);
-    font-weight: 900;
-    font-size: 12px;
-    padding: 15px;
-    padding-bottom: 0px;    
-}
 
 
-.pro-1,.pro-2, .pro-3{
+
+
+
+.pro-1,.pro-2, .pro-3 , .pro-4{
         height: 75%;
+        cursor: none;
 }
-.pro-1 img,.pro-2 img,.pro-3 img{
+.pro-1 img,.pro-2 img,.pro-3 img , .pro-4 img{
     display: block;
     width: 100%;
     height: 100%;
@@ -400,12 +377,17 @@ html{
     image-rendering: auto;
     transition: .5s all ease;
     margin: auto;
+    cursor: none;
+
+    &:hover{
+        transform: scale(1.02);
+    }
 }
 .pro-contents h3{
     color: var(--clr);
     font-family: var(--base-font);
     font-weight: 550;
-    padding: 10px 0 0 0;
+    padding: 16px 0 0 0;
     font-size: 16px;
 }
 .add-contents{
@@ -418,17 +400,19 @@ html{
 }
 .add-contents h4{
     font-weight: 100;
-
+    font-size: 12px;
+    padding: 2px 0;
 }
 .add-contents img{
-    width: 25px;
+    color: #a290fc;
+    width:30px;
     height: 20px;
     display: inline-block;
     margin: 0;
     position: relative;
     top: -12px;
     &:hover{
-    transform: rotate(-45deg);
+    transform: rotate(-25deg);
         position: relative;
         top: -12px;
         margin: 0;
@@ -436,6 +420,9 @@ html{
 }
 .add-contents a{
     cursor: none;
+}
+.pro-contents h3{
+    font-weight: 700;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
@@ -488,8 +475,8 @@ html{
     border-width: 1px;
     padding: 5px;
     margin-top: 20px;
-    cursor: none;
     transition: 1s all;
+    cursor: none;
 }
 .skill1 svg{
     color: var(--primary);
@@ -510,16 +497,14 @@ html{
     font-weight: 300;
 }
 
-.skill7 i{
-    color: var(--clr2);
-    place-content: center;
-    background: transparent;
-    padding: 5px;
-    margin: 2px 0;
-    margin-left: 8px;
-    font-size: 20px;
-    border: solid 1px var(--box-bg1);
-    border-radius: 5px;
+
+
+.skill5{
+    img{
+        width: 20px;
+        height: 20px;
+        margin: 7px 5px;
+    }
 }
 
 .skill2 ,.skill3, .skill4, .skill5, .skill6, .skill7{
@@ -531,10 +516,9 @@ html{
     border-width: 1px;
     padding: 5px;
     margin-top: 10px;
-    cursor: none;
     transition: 1s all;
 }
-.skill2 svg,.skill3 svg, .skill5 svg, .skill6 svg, .skill4  svg{
+.skill2 svg,.skill3 svg, .skill7 svg, .skill6 svg, .skill4  svg {
     color: var(--primary);
     place-content: center;
     background:transparent;
@@ -556,8 +540,18 @@ html{
 .skill7 h3{
     padding: 0;    
 }
+.skill4 i{
+    color: #61dbfb;
+    place-content: center;
+    background: transparent;
+    padding: 5px;
+    margin: 2px 0;
+    font-size: 20px;
+    border: solid 1px var(--box-bg1);
+    border-radius: 5px;
+}
 
-#html{
+#s1{
     display: none;
     flex-direction: column;
     width: 350px;
@@ -577,16 +571,16 @@ html{
     transition: all .3s ;
     
 }
-#html span{
+#s1 span{
     color: var(--primary);
 }
-#html p{
+#s1 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
 
-#css{
+#s2{
     display: none;
     width: 350px;
     position: absolute;
@@ -604,15 +598,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#css span{
+#s2 span{
     color: var(--primary);
 }
-#css p{
+#s2 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#js{
+#s3{
     display: none;
     width: 350px;
     position: absolute;
@@ -630,15 +624,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#js span{
+#s3 span{
     color: var(--primary);
 }
-#js p{
+#s3 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#figma{
+#s4{
     display: none;
     width: 350px;
     position: absolute;
@@ -656,15 +650,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#figma span{
+#s4 span{
     color: var(--primary);
 }
-#figma p{
+#s4 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#davinci{
+#s5{
     display:none;
     width: 350px;
     position: absolute;
@@ -682,15 +676,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#davinci span{
+#s5 span{
     color: var(--primary);
 }
-#davinci p{
+#s5 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#ink{
+#s6{
     display: none;
     width: 350px;
     position: absolute;
@@ -708,15 +702,15 @@ html{
     font-weight: 500;
     transition: all .3s ;
 }
-#ink span{
+#s6 span{
     color: var(--primary);
 }
-#ink p{
+#s6 p{
     color: var(--clr2);
     padding-top:10px ;
     font-family: var(--base-font);
 }
-#wire{
+#s7{
     display: none;
     width: 350px;
     position: absolute;
@@ -735,10 +729,10 @@ html{
     transition: all .3s ;
     z-index: 999;
 }
-#wire span{
+#s7 span{
     color: var(--primary);
 }
-#wire p{
+#s7 p{
 
     color: var(--clr2);
     padding-top:10px ;
@@ -820,8 +814,8 @@ html{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
-    'projects'
     'intro'
+    'projects'
     'social'
     'skills'
     'mybox'

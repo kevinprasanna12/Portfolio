@@ -1,47 +1,51 @@
-function moverhtml(){
-    document.getElementById("html").style.display= "inline-block" ;
+
+
+function movers1(){
+    document.getElementById("s1").style.display= "inline-block" ;
 }
-function mouthtml(){
-    document.getElementById("html").style.display= "none";
+function mouts1(){
+    document.getElementById("s1").style.display= "none";
 }
-function movercss(){
-    document.getElementById("css").style.display= "inline-block";
+function movers2(){
+    document.getElementById("s2").style.display= "inline-block";
 }
-function moutcss(){
-    document.getElementById("css").style.display= "none";
+function mouts2(){
+    document.getElementById("s2").style.display= "none";
 }
-function moverjs(){
-    document.getElementById("js").style.display= "inline-block";
+function movers3(){
+    document.getElementById("s3").style.display= "inline-block";
 }
-function moutjs(){
-    document.getElementById("js").style.display= "none";
+function mouts3(){
+    document.getElementById("s3").style.display= "none";
 }
-function moverfigma(){
-    document.getElementById("figma").style.display= "inline-block";
+function movers4(){
+    document.getElementById("s4").style.display= "inline-block";
 }
-function moutfigma(){
-    document.getElementById("figma").style.display= "none"
+function mouts4(){
+    document.getElementById("s4").style.display= "none"
 }
-function moverda(){
-    document.getElementById("davinci").style.display= "inline-block";
+function movers5(){
+    document.getElementById("s5").style.display= "inline-block";
 }
-function moutda(){
-    document.getElementById("davinci").style.display="none";
+function mouts5(){
+    document.getElementById("s5").style.display="none";
 }
-function moverink(){
-    document.getElementById("ink").style.display= "inline-block";
+function movers6(){
+    document.getElementById("s6").style.display= "inline-block";
 }
-function moutink(){
-    document.getElementById("ink").style.display= "none";
+function mouts6(){
+    document.getElementById("s6").style.display= "none";
 }
-function moverwire(){
-    document.getElementById("wire").style.display="inline-block";
+function movers7(){
+    document.getElementById("s7").style.display="inline-block";
 }
-function moutwire(){
-    document.getElementById("wire").style.display= "none";
+function mouts7(){
+    document.getElementById("s7").style.display= "none";
 }
 
 // ----------------------------------------------------------------------------------
+
+
 
 window.addEventListener("mousemove", function(dets){
     gsap.to(".cursor", {
