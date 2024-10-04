@@ -45,17 +45,51 @@ function mouts7(){
 
 // ----------------------------------------------------------------------------------
 
+let mouseX;
+let mouseY;
+let projects = document.getElementsByClassName("cursor-viewer");
 
+window.addEventListener('mousemove',e =>{
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 
-window.addEventListener("mousemove", function(dets){
     gsap.to(".cursor", {
-        x: dets.x,
-        y: dets.y,
+        x: mouseX,
+        y: mouseY,
         delay:0,
         duration:0.2         
+    })
+})
+
+Array.from(projects).forEach(project => {
+    project.addEventListener('mousemove', () => {
+        gsap.to('.cursor-pro', {
+            x: mouseX,
+            y: mouseY
+        });
+    });
 });
 
+
+Array.from(projects).forEach(project => {
+    project.addEventListener('mouseenter', () => {
+        gsap.to('.cursor-pro', {
+            x: mouseX,
+            y: mouseY,
+            opacity:1
+        });
+    });
 });
+Array.from(projects).forEach(project => {
+    project.addEventListener('mouseleave', () => {
+        gsap.to('.cursor-pro', {
+            opacity:0,
+            duration:0.2
+        });
+    });
+});
+
+
 
 gsap.to('#major-contents',{
     scrollTrigger: {

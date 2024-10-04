@@ -44,7 +44,8 @@ html.lenis, html.lenis body {
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
   }
-  .cursor{
+    
+.cursor{
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -54,6 +55,20 @@ html.lenis, html.lenis body {
     top: -2px;
     left: -5px;
     pointer-events: none;
+}
+
+.cursor-pro{
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    color: #1e1e1e;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    h1{
+        font-size: 12px;
+        font-family: var(--base-font);
+    }
 }
 
 /*--------------------------------------*/  
@@ -357,12 +372,6 @@ html{
     padding: 15px  ;
     padding-bottom: 0px;
 }
-
-
-
-
-
-
 .pro-1,.pro-2, .pro-3 , .pro-4{
         height: 75%;
         cursor: none;
@@ -378,10 +387,6 @@ html{
     transition: .5s all ease;
     margin: auto;
     cursor: none;
-
-    &:hover{
-        transform: scale(1.02);
-    }
 }
 .pro-contents h3{
     color: var(--clr);
@@ -404,7 +409,7 @@ html{
     padding: 2px 0;
 }
 .add-contents img{
-    color: #a290fc;
+    color: var(--primary);
     width:30px;
     height: 20px;
     display: inline-block;

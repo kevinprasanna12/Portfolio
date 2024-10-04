@@ -129,6 +129,7 @@ html{
     position: absolute;
     top: 80px;
     left: 197px;
+    padding-left: 10px;
     color: var(--clr2);
     font-family: var(--major-font);
     font-weight: 200;
@@ -727,7 +728,9 @@ html{
     border: solid var(--box-bg2) 1px;
     padding: 20px 20px;
     overflow: hidden;
-    transform: scale(0.2)
+    transform: scale(0.2);
+    place-content: center;
+    
 }
 .pro-head{
     position: relative;
@@ -761,7 +764,6 @@ html{
 }
 .brands-list{
     overflow: hidden;
-    
 }
 .wrapper{
     display: grid;
@@ -931,7 +933,7 @@ html{
     position: absolute;
     z-index: 1;
     right: 250px;
-    top: 95px;
+    top: 75px;
     background: var(--box-bg3);
     color: var(--clr);
     font-family: var(--major-font);
@@ -959,7 +961,7 @@ html{
     position: absolute;
     z-index: 3;
     right: 250px;
-    top: 148px;
+    top: 128px;
     background: var(--box-bg3);
     color: var(--clr);
     font-family: var(--major-font);
@@ -985,7 +987,7 @@ html{
     position: absolute;
     z-index: 3;
     right: 250px;
-    top: 205px;
+    top: 185px;
     background: var(--box-bg3);
     color: var(--clr);
     font-family: var(--major-font);
@@ -1011,7 +1013,7 @@ html{
     position: absolute;
     z-index: 3;
     right: 250px;
-    top: 260px;
+    top: 240px;
     background: var(--box-bg3);
     color: var(--clr);
     font-family: var(--major-font);
@@ -1037,7 +1039,7 @@ html{
     position: absolute;
     z-index: 3;
     right: 250px;
-    top: 315px;
+    top: 300px;
     background: var(--box-bg3);
     color: var(--clr);
     font-family: var(--major-font);
@@ -1063,7 +1065,7 @@ html{
     position: absolute;
     z-index: 3;
     right: 250px;
-    top: 370px;
+    top: 360px;
     background: var(--box-bg3);
     color: var(--clr);
     font-family: var(--major-font);
@@ -1088,7 +1090,7 @@ html{
     width: 350px;
     position: absolute;
     right: 250px;
-    top: 425px;
+    top: 415px;
     background: var(--box-bg3);
     color: var(--clr);
     font-family: var(--major-font);
@@ -1316,7 +1318,9 @@ html{
 /**********************************************************************************************************************************************/
 /**********************************************************************************************************************************************/
 
-@media (max-width: 1286px) {
+@media (min-width: 1200px) {
+
+
     .ed_head i,.pro-head i{
         left: 110px;
     }
