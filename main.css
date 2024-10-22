@@ -598,10 +598,11 @@ html{
     border-radius: 20px;
     border: solid var(--box-bg2) 1px;
     padding: 20px;
-    overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
     transform: translateY(30rem);
+    overflow: hidden;
+
 }
 
 .achievements hr{
@@ -648,7 +649,6 @@ html{
     border-radius: 20px;
     border: solid 2px var(--box-bg3);
     animation: slider 30s ease-in infinite;
-   
 }
 .a-content1 h3, .a-content3 h3 ,.a-content5 h3{
     position: absolute;
